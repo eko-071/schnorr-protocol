@@ -13,7 +13,7 @@ Schnorr's Protocol is a **zero-knowledge proof** that allows a prover to demonst
 
 ## How It Works
 
-### Interactive Protocol (4 Steps)
+### Interactive Protocol
 
 1. **Commitment:** Prover sends a random $r$ such that $t = g^r \mod p$
 2. **Challenge:** Verifier sends random $c$
