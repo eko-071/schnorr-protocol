@@ -25,13 +25,9 @@ Schnorr's Protocol is a **zero-knowledge proof** that allows a prover to demonst
 Given public parameters $(p, g, y)$ where $y = g^x \mod p$, the prover demonstrates knowledge of secret $x$ without revealing it.
 
 The verification equation holds because:
-$$
-\begin{split}
-g^s &= g^{r + c \cdot x} \\
-    &= g^r \cdot (g^x)^c \\
-    &= t \cdot y^c
-\end{split}
-$$
+
+$g^s = g^{r + c \cdot x} = g^r \cdot (g^x)^c = t \cdot y^c$
+
 
 ## Installation
 
@@ -120,7 +116,6 @@ Schnorr's Protocol is used in:
 
 - **Bitcoin (Taproot):** Schnorr signatures for better privacy and efficiency
 - **EdDSA/Ed25519:** Modern signature scheme used in SSH, Signal, cryptocurrencies
-- **Multi-signatures:** MuSig protocol for signature aggregation
 - **Authentication:** Zero-knowledge identification systems
 - **Blockchain:** Consensus mechanisms and privacy protocols
 
